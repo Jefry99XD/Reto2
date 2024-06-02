@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulce Tentación</title>
+</head>
+<body>
+<div class="content">
+    <div class="header">
+        <div class="logo">
+            <img src="logo.jpg" alt="Catering Dulce Tentación">
+        </div>
+        <h1>Catering Dulce Tentación</h1>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li class="nav-item"><button class="nav-button" id="openProductsModal">Productos</button></li>
+            <li class="nav-item"><button class="nav-button" id="openContactModal">Contacto</button></li>
+        </ul>
+    </nav>
+
+    <!-- Carrusel principal -->
+    <div id="carousel" class="slideshow-container">
+        <div class="carousel-content">
+            <!-- Aquí va tu contenido de carrusel -->
+        </div>
+        <div class="carousel-buttons">
+            <button id="carousel-arrow--prev" class="carousel-arrow">&#10094;</button>
+            <button id="carousel-arrow--next" class="carousel-arrow">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- Modal de Contacto -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Contacto</h1>
+            <ul>
+                <li><a href="https://www.facebook.com/profile.php?id=100063566860922">Facebook</a></li>
+                <li><a href="https://www.instagram.com/caterings_dulcetentacion/">Instagram</a></li>
+                <li>Costa Rica, San José, Hatillo</li>
+                <li>Teléfono: 7291-3907</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Modal de Productos -->
+    <div id="productsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Productos</h1>
+            <div class="slideshow-container">
+                <div id="productsCarousel" class="carousel-content">
+                    <!-- Imágenes del carrusel de productos se cargarán aquí -->
+                    <button id="products-carousel-arrow--prev" class="carousel-arrow left">&#10094;</button>
+                <button id="products-carousel-arrow--next" class="carousel-arrow right">&#10095;</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h1>Sobre Nosotros</h1>
+        <div class="imagenNosotros">
+            <img src="sobreNosotros.png" alt="Sobre Nosotros">
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <a class="facebook" href="https://www.facebook.com/profile.php?id=100063566860922">Facebook</a><br>
+            <a href="https://www.instagram.com/caterings_dulcetentacion/">Instagram</a><br>
+            <p>Costa Rica, San José, Hatillo</p>
+            <p>Teléfono: 7291-3907</p>
+        </ul>
+    </footer>
+</div>
+
+<!-- Scripts -->
+<script src="modal.js"></script>
+<script src="carrucel.js"></script>
+<script src="productos.js"></script>
+</body>
+</html>
